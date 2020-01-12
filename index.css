@@ -1,0 +1,56 @@
+/* This stylesheet also includes the style configuration of navigationbar */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: Helvetica !important;
+  font-size: 0.9rem;
+}
+
+/* Making the corner of the images sharp */
+.card,
+.card img {
+  border-radius: 0%;
+}
+
+/* Navigationbar background color changed to white */
+.mainContainer--colour-white--paddingRight-5px {
+  background-color: #ffffff;
+  padding-right: 5px;
+}
+
+/* Giving 0 padding top and bottom to the navbar to match it with the top bar of chrome browser */
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Logo dimension */
+.navbar-brand__logo--size {
+  max-height: 35px;
+  width: auto;
+}
+
+/* Navigationbar items */
+.nav-item--font--margin {
+  font-family: Helvetica !important;
+  margin-left: 0.5rem;
+  margin-top: 23px;
+}
+
+/* Navigationbar active item */
+.active-nav--color {
+  color: #ff0202 !important;
+}
+
+/* <---------- Summary ----------> */
+
+/* .mainContainer -----> The container that contains the whole Navigationbar */
+/* .navbar-brand__logo -----> The logo image of the Navigationbar */
+/* .nav-item -----> Each navigation item of the Navigationbar */
+/* .active-nav--color -----> Activated item of the Navigationbar */
+/* .navbar--paddingTopAndBottom-0 -----> The whole Navigatonbar section */

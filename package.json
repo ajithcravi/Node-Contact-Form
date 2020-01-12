@@ -1,0 +1,26 @@
+{
+  "name": "Node-Contact-Form",
+  "version": "1.0.0",
+  "description": "It is a contact form",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajithcravi/Node-Contact-Form.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajithcravi/Node-Contact-Form/issues"
+  },
+  "homepage": "https://github.com/ajithcravi/Node-Contact-Form#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "nodemailer": "^6.4.2"
+  }
+}
