@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AAA</title>
+    <link rel="icon"
+        href="https://res.cloudinary.com/ajithvault/image/upload/v1575434482/AAA/AAA_Logo_2019_For_Email_Signs_vepg8b.png"
+        type="image/gif" sizes="16x16" />
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <!-- Font awesome script -->
+    <script src="https://kit.fontawesome.com/e1e8e053d6.js" crossorigin="anonymous"></script>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
+    <!-- Custom stylesheets -->
+    <!-- Overall stylesheet -->
+    <link rel="stylesheet" href="public/css/index.css" />
+</head>
+
+<body>
+    <!-- Navigationbar -->
+    <div class="container-fluid mainContainer--colour-white--paddingRight-5px sticky-top">
+        <nav class="navbar navbar-expand-md navbar-light ticky-top navbar--paddingTopAndBottom-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="navbar-brand__logo--size"
+                        src="https://res.cloudinary.com/dpm4kxo9p/image/upload/v1575700408/AAA_Logo_2019_Final__05-12-19_03_ltn45f.jpg"
+                        alt="AAA Logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto" style="display: inherit;">
+                        <li class="nav-item nav-item--font--margin regularnavItems" style="display: inherit;">
+                            <a class="nav-link " href="../index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item nav-item--font--margin regularnavItems" style="display: inherit;">
+                            <a class="nav-link" href="./projects.html">
+                                Projects
+                            </a>
+                        </li>
+                        <li class="nav-item nav-item--font--margin regularnavItems" style="display: inherit;">
+                            <a class="nav-link" href="./team.html">
+                                Team
+                            </a>
+                        </li>
+                        <li class="nav-item nav-item--font--margin regularnavItems" style="display: inherit;">
+                            <a class="nav-link active-nav active-nav--color" href="./contact1.html">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li id="backnavForProjects" class="nav-item nav-item--font--margin" style="display: none;">
+                            <a class="nav-link" href="./projects.html">
+                                Back
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Card -->
+    <div class="card mb-3" style=" margin-left: 45px; margin-right: 45px; border: none;">
+        <div class="row no-gutters">
+            <div class="col-md-6" style="padding-right: 1rem;">
+                <div class="addressAndMailDetails">
+                    <p>
+                        <b>Address</b><br />
+                        #1A, 10th Cross, 11th Main Rd, HAL 2nd Stage, <br />
+                        Bengaluru, Karnataka 560008 <br />
+                        <br />
+                        <b>For general enquiries</b> <br />
+                        contact@aaainc.in <br />
+                        <br />
+                        <b>For job opportunitiess</b> <br />
+                        careers@aaainc.in
+                    </p>
+                    <br />
+                </div>
+                <div class="contactForm">
+                    <p>
+                        Please drop a message below if you like to discuss a project with
+                        us
+                    </p>
+                    {{msg}}
+                    <form method="POST" action="send" enctype="text/plain">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group row form-group--marginBottom">
+                                    <div class="col-sm-12">
+                                        <input name="name" type="text" class="form-control form-control-sm"
+                                            id="colFormLabelSm" placeholder="Name" />
+                                    </div>
+                                </div>
+                                <div class="form-group row form-group--marginBottom">
+                                    <div class="col-sm-12">
+                                        <input name="email" style="margin-top: 0.25rem;" type="email"
+                                            class="form-control form-control-sm" id="colFormLabelSm"
+                                            placeholder="Email" />
+                                    </div>
+                                </div>
+                                <div class="form-group row form-group--marginBottom">
+                                    <div class="col-sm-12">
+                                        <input name="mobile" style="margin-top: 0.25rem;" type="number"
+                                            class="form-control form-control-sm" id="colFormLabelSm"
+                                            placeholder="Mobile" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea name="message" class="form-control" id="exampleFormControlTextarea1"
+                                        rows="5" placeholder="Message"></textarea>
+                                    <button style="margin-top: 1.25rem; float: right;" type="submit"
+                                        class="btn btn-primary btn-sm submitButton">
+                                        Submit
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6" style="padding-left: 1rem; max-height: 367px; overflow: hidden;">
+                <div>
+                    <a href="#"><img src="public/images/map.png" class="card-img" alt="..." /></a>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row; justify-content: flex-end;">
+            <div>
+                <a style="font-size: 2rem; margin-left: 2rem;"
+                    href="https://m.facebook.com/story.php?story_fbid=2427540974198338&substory_index=2&id=2427540337531735"
+                    class="socialMediaIcons" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div>
+                <a style="font-size: 2rem; margin-left: 2rem"
+                    href="https://www.instagram.com/p/B4Eur_3l_jC/?igshid=3uva89yjhnac" class="socialMediaIcons"
+                    target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Bootstrap scripts -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</html>
