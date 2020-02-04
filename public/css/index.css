@@ -47,6 +47,34 @@ body {
   color: #ff0202 !important;
 }
 
+.btn {
+  background-color: #a9a9a9;
+  border: #a9a9a9;
+}
+
+.btn:hover {
+  background-color: #ff0202;
+  border: #ff0202;
+}
+
+.socialMediaIcons {
+  color: #a9a9a9;
+}
+
+.socialMediaIcons:hover {
+  color: #ff0202;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #a9a9a9;
+  color: white;
+  text-align: center;
+}
+
 /* <---------- Summary ----------> */
 
 /* .mainContainer -----> The container that contains the whole Navigationbar */
