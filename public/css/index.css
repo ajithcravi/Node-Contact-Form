@@ -11,6 +11,15 @@ body {
   font-size: 0.9rem;
 }
 
+a {
+  font-size: 1.25em;
+  margin-left: 0.75em;
+}
+
+p {
+  font-size: 1.25em;
+}
+
 /* Making the corner of the images sharp */
 .card,
 .card img {
